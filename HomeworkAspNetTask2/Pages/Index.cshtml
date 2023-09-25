@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var randomNumber = new Random().Next(1, 26) + 65;
+}
+
+<div class="text-center">
+    <h1 class="display-4">
+        @Convert.ToChar(randomNumber)
+    </h1>
+</div>

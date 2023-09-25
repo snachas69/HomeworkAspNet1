@@ -1,0 +1,42 @@
+﻿@page
+@model HomeworkAspNetTask2.Pages.ListModel
+@{
+}
+
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>
+				Restaurant Name
+			</th>
+			<th>
+				Location
+			</th>
+			<th>
+				Phone
+			</th>
+			<th>
+				Web Site
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var item in Model.Restaurants)
+		{
+			<tr>
+				<th>
+					@item.Name
+				</th>
+				<th>
+					@item.Location
+				</th>
+				<th>
+					@item.Phone
+				</th>
+				<th>
+					@item.WebSite
+				</th>
+			</tr>
+		}
+	</tbody>
+</table>
